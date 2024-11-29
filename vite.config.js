@@ -1,7 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  base: "/Ar/",
+  build: {
+    assetsDir: "assets",
+    rollupOptions: {
+      output: {
+        entryFileNames: "index-[hash].js",
+        chunkFileNames: "index-[hash].js",
+        assetFileNames: "assets/[name].[hash][extname]",
+      },
+    },
+  },
+});

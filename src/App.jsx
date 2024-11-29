@@ -7,9 +7,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<XrCubeContainer />} />
-        <Route path="/cube" element={<CubeContainer />} />
-        <Route path="/xr-cube" element={<XrCubeContainer />} />
+        <Route path="Ar/" element={<XrCubeContainer />} />
+        <Route path="Ar/cube" element={<CubeContainer />} />
+        <Route path="Ar/xr-cube" element={<XrCubeContainer />} />
       </Routes>
     </>
   );
